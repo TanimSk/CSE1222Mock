@@ -3,6 +3,11 @@ package q1;
 public class Supervisor extends Worker {
     private String division;
 
+    Supervisor(String name, int wage, String division) {
+        super(name, wage);
+        this.division = division;
+    }
+
     public void setDivision(String newDivision) {
         division = newDivision;
     }

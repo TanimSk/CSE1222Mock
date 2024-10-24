@@ -4,6 +4,11 @@ public class Worker {
     private String name = "";
     private int wage = 0;
 
+    Worker(String name, int wage) {
+        this.name = name;
+        this.wage = wage;
+    }
+
     public void setName(String newName) {
         name = newName;
     }
