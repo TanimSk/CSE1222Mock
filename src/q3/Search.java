@@ -27,7 +27,7 @@ public class Search {
                 while (scanner.hasNextLine()) {
                     String line = scanner.nextLine();
                     if (line.contains(f)) {
-                        searchResults.add(filename + " : " + line);
+                        searchResults.add(f + " : " + line);
                         break;
                     }
                 }
