@@ -3,12 +3,12 @@ package q1;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Test {
+public class AppTest {
     Worker worker = new Worker("Tanim", 150000);
     Supervisor supervisor = new Supervisor("Tanim", 1050, "IT");
     Director director = new Director("Tanim", 1050, "IT");
 
-    @Test
+    @AppTest
     void testWorker() {
         assertEquals("Tanim", worker.getName());
         assertEquals(150000, worker.getWage());
@@ -18,7 +18,7 @@ public class Test {
         assertEquals(250000, worker.getWage());
     }
 
-    @Test
+    @AppTest
     void testSupervisor() {
         assertEquals("Tanim", supervisor.getName());
         assertEquals(1050, supervisor.getWage());
@@ -31,7 +31,7 @@ public class Test {
         assertEquals("HR", supervisor.getDivision());
     }
 
-    @Test
+    @AppTest
     void testDirector() {
         assertEquals("Tanim", director.getName());
         assertEquals(1050, director.getWage());
