@@ -23,18 +23,11 @@ public class Search {
                     continue;
                 }
 
-                // read line by line
-                // search for the string
-                // if found, add the filename to searchResults
-                // print the searchResults
                 Scanner scanner = new Scanner(file);
-                boolean found = false;
-
                 while (scanner.hasNextLine()) {
                     String line = scanner.nextLine();
                     if (line.contains(f)) {
                         searchResults.add(filename + " : " + line);
-                        found = true;
                         break;
                     }
                 }
