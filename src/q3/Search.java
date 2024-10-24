@@ -16,7 +16,7 @@ public class Search {
 
         for (String f : filenames) {
             try {
-                File file = new File(filename);
+                File file = new File("./" + filename);
 
                 if (!file.exists()) {
                     System.out.println("File does not exist");
