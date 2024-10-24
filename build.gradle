@@ -17,3 +17,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+application {
+    mainClassName = 'q1.Runner'  // Specify the main class
+}

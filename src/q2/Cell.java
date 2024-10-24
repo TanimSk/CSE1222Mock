@@ -1,14 +1,14 @@
 package q2;
 
-public class Grid {
+public class Cell {
     private int row;
     private int col;
-    private String value;
+    private String description;
 
-    Grid(int row, int col, String value) {
+    Cell(int row, int col, String description) {
         this.row = row;
         this.col = col;
-        this.value = value;
+        this.description = description;
     }
 
     public int getRow() {
@@ -20,7 +20,7 @@ public class Grid {
     }
 
     public String getValue() {
-        return value;
+        return description;
     }
 
 }
